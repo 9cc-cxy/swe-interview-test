@@ -43,4 +43,4 @@
 
 **Note:**
 - Make sure the backend is running before starting the frontend.
-- If you change the backend port, update the frontend `.env` or API URLs accordingly.
+- If you change the backend port, update the frontend `.env` accordingly.
