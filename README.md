@@ -38,7 +38,7 @@
 	```sh
 	npm start
 	```
-	The frontend will run on `http://localhost:3000` by default.
+	Navigate to `http://localhost:3000` to view the application.
 ---
 
 **Note:**
