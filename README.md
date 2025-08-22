@@ -10,7 +10,7 @@
 	```sh
 	npm install
 	```
-3. (Optional) create a `.env` file in the backend folder and set the port:
+3. (Optional) Create a `.env` file in the backend folder and set the port:
 	```env
 	PORT=4000
 	```
@@ -44,4 +44,3 @@
 **Note:**
 - Make sure the backend is running before starting the frontend.
 - If you change the backend port, update the frontend `.env` or API URLs accordingly.
-- For development, CORS is configured to allow requests from `http://localhost:3000` by default.
