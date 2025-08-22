@@ -10,17 +10,13 @@
 	```sh
 	npm install
 	```
-3. Create a `.env` file in the backend folder (if not present) and set the port (default is 4000):
+3. (Optional) create a `.env` file in the backend folder and set the port:
 	```env
 	PORT=4000
 	```
-    The frontend URL is for CORS is by default `http://localhost:3000`. If the frontend is run on a different port, set allowed frontend URL for CORS:
-    ```
-    CLIENT_URL=http://localhost:3001
-	```
 4. Start the backend server:
 	```sh
-	npm start
+	node index.js
 	```
 	The backend will run on `http://localhost:5000` by default, unless you set a different PORT in the `.env` file.
 
@@ -43,7 +39,6 @@
 	npm start
 	```
 	The frontend will run on `http://localhost:3000` by default.
-
 ---
 
 **Note:**
