@@ -1,11 +1,52 @@
-# SWE INTERVIEW TEST 
-THIS IS TO TEST YOUR SKILLS TO MEET OUR APP DEVELOPMENT REQUIREMENTS
+## How to Launch the Application
 
-1. Clone this repo to your local machine.
-2. Read `Assignment Requirements` carefully and follow it.
-4. Please commit your entire code to `your own Github repository` 
-5. On your repo, please add step-by-step instructions on how to launch (for both the Backend and Frontend) to the `README.md`
-6. Share your repo link with us via email.
+### 1. Backend Setup
 
-HAPPY CODING! </br>
-A Round Entertainment
+1. Open a terminal and navigate to the backend folder:
+	```sh
+	cd StarterCode/backend
+	```
+2. Install dependencies:
+	```sh
+	npm install
+	```
+3. Create a `.env` file in the backend folder (if not present) and set the port (default is 4000):
+	```env
+	PORT=4000
+	```
+    The frontend URL is for CORS is by default `http://localhost:3000`. If the frontend is run on a different port, set allowed frontend URL for CORS:
+    ```
+    CLIENT_URL=http://localhost:3001
+	```
+4. Start the backend server:
+	```sh
+	npm start
+	```
+	The backend will run on `http://localhost:5000` by default, unless you set a different PORT in the `.env` file.
+
+### 2. Frontend Setup
+
+1. Open a new terminal and navigate to the frontend folder:
+	```sh
+	cd StarterCode/frontend
+	```
+2. Install dependencies:
+	```sh
+	npm install
+	```
+3. Create a `.env` file in the frontend folder to specify the backend URL:
+	```env
+	REACT_APP_API_URL=http://localhost:5000
+	```
+4. Start the frontend app:
+	```sh
+	npm start
+	```
+	The frontend will run on `http://localhost:3000` by default.
+
+---
+
+**Note:**
+- Make sure the backend is running before starting the frontend.
+- If you change the backend port, update the frontend `.env` or API URLs accordingly.
+- For development, CORS is configured to allow requests from `http://localhost:3000` by default.
